@@ -1,0 +1,677 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 10000px;
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  background-color: #282a2a;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Start Reveal Effect */
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+/* End Reveal Effect */
+
+/* Start Navigasi Bar */
+
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c3333;
+  color: black;
+  /* width: 100%; */
+  /* margin: 0 2rem 0; */
+}
+
+.brand-title {
+  width: 15rem;
+  padding-left: 2rem;
+}
+
+.brand-title:hover {
+  transition: all 0.5s;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  /* padding: 0; */
+  padding-right: 1rem;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: #f5f2e7;
+  padding: 1rem;
+  font-size: 1.3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.navbar-links li a:hover {
+  color: #395b64;
+  transition: all 0.5s;
+  font-weight: 500;
+  background-color: #f5f2e7;
+  border-radius: 5rem;
+}
+
+.hamburger {
+  position: absolute;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.hamburger .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #f5f2e7;
+  border-radius: 10px;
+}
+
+/* End Navigasi Bar */
+
+/* Start Home Section */
+
+.home-section {
+  margin-top: 4rem;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.astronot-img {
+  width: 30rem;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.welcome-text {
+  /* border: 2px dotted; */
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.welcome-text h1 {
+  text-align: center;
+  font-size: 5rem;
+  color: #f5f2e7;
+  font-family: poppins, sans-serif;
+  line-height: 6rem;
+}
+
+.welcome-text p {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  color: #f5f2e7;
+  /* font-style: italic; */
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+.emphasis {
+  font-size: 5rem;
+  font-family: poppins, sans-serif;
+  color: #395b64;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+/* End Home Section */
+
+/* Start Introduction Section */
+
+.introduction-section {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 95%; */
+  flex-wrap: wrap;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main-content article {
+  color: #f5f2e7;
+  text-align: justify;
+  width: 50%;
+  padding-right: 2rem;
+  font-size: 1.7rem;
+  line-height: 3rem;
+}
+
+.main-content aside {
+  padding-top: 2rem;
+  width: 37.5rem;
+  height: 35rem;
+  background: #e5e5e5;
+  border-width: 0px 10px 10px 0px;
+  border-style: solid;
+  border-color: #395b64;
+  border-radius: 0px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.introduction-section .title {
+  color: #e5e5e5;
+  margin-bottom: 4rem;
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+.highlighter {
+  color: #395b64;
+}
+
+.profile-pict {
+  width: 12rem;
+}
+
+.about-me {
+  font-size: 1.7rem;
+  padding-right: 10rem;
+  font-weight: 390;
+}
+
+.poin {
+  font-weight: bold;
+  color: #395b64;
+}
+
+/* End Introduction Section */
+
+/* Start About Solar */
+
+.about-solar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.titles {
+  color: #e5e5e5;
+  margin-bottom: 4rem;
+  font-size: 4rem;
+  font-weight: bolder;
+  margin-top: 7rem;
+}
+
+.main-text {
+  color: #f5f2e7;
+  text-align: justify;
+  /* width: 50%; */
+  padding-right: 2rem;
+  padding-left: 2rem;
+  font-size: 1.7rem;
+  line-height: 3rem;
+}
+
+/* End About Solar */
+
+/* Start about sun */
+
+.sun-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.SUN-image {
+  margin-left: 2rem;
+  width: 38rem;
+  animation: rotation 20s infinite linear;
+  filter: drop-shadow(0 0 0.75rem rgb(254, 229, 8));
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.container .main-text {
+  width: 50%;
+}
+
+/* End About Sun */
+
+/* Start About Mercury */
+
+.mercury-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.mercury-section .titles {
+  /* border: solid; */
+  width: 60%;
+  text-align: center;
+}
+
+.planet-card {
+  padding-top: 3rem;
+  width: 37.5rem;
+  height: 57.75rem;
+  background: #e5e5e5;
+  border-width: 0px 10px 10px 0px;
+  border-style: solid;
+  border-color: #395b64;
+  border-radius: 0px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  margin-right: 2rem;
+}
+
+.planet-img {
+  width: 25rem;
+  padding-bottom: 3rem;
+}
+
+.about-planet {
+  font-size: 1.7rem;
+  padding-right: 1rem;
+  font-weight: 390;
+}
+
+/* End About Mercury */
+
+/* Start About Venus */
+
+.venus-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.venus-section .titles {
+  width: 60%;
+  text-align: center;
+}
+
+/* End About Venus */
+
+/* Start About Earth */
+
+.earth-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.earth-section .titles {
+  width: 50%;
+  text-align: center;
+}
+
+/* End About Earth */
+
+/* Start about mars */
+.mars-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+/* End About Mars */
+
+/*
+
+
+
+
+
+
+
+
+
+
+ */
+/* Responsive */
+@media (max-width: 800px) {
+  /* Start Navbar */
+  .brand-title {
+    cursor: pointer;
+    width: 10rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    padding-bottom: 1rem;
+  }
+
+  .hamburger {
+    display: flex;
+    margin-top: 30px;
+  }
+
+  .active .navbar-links ul li a {
+    font-weight: bold;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+    margin-left: -0.7rem;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+    transition: all 0.5s;
+    background-color: #2c3333;
+    color: #f5f2e7;
+  }
+
+  .navbar-links ul li a:hover {
+    color: #395b64;
+    transition: all 0.5s;
+    font-weight: bolder;
+    background-color: #f5f2e7;
+    border-radius: 5rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+    transition: 15s;
+  }
+  .home-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Start Homepage */
+  .astronot-img {
+    width: 15rem;
+  }
+  .welcome-text h1 {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  .emphasis {
+    font-size: 2rem;
+    font-family: poppins, sans-serif;
+  }
+
+  .welcome-text p {
+    font-size: 1.5rem;
+    width: 150%;
+    text-align: justify;
+  }
+
+  /* Start Introduction */
+
+  .introduction-section {
+    margin-top: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .introduction-section .title {
+    color: #e5e5e5;
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+  .main-content {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .main-content aside {
+    padding-top: 2rem;
+    max-width: 20.9rem;
+    height: 27rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* resize: both; */
+    overflow: auto;
+    max-height: fit-content;
+    max-width: fit-content;
+  }
+  .profile-pict {
+    width: 8rem;
+  }
+
+  .about-me {
+    font-size: 1.2rem;
+    padding-right: 0rem;
+    font-weight: 390;
+    /* margin-left: -2rem; */
+  }
+  .main-content article {
+    margin-top: 2.5rem;
+    color: #f5f2e7;
+    width: 100%;
+    padding-right: 0rem;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+  }
+
+  /* Start About Solar */
+  .about-solar {
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .titles {
+    color: #e5e5e5;
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 5rem;
+  }
+
+  .main-text {
+    color: #f5f2e7;
+    width: 100%;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+  }
+
+  /* Start About Sun */
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .SUN-image {
+    margin-left: 0rem;
+    width: 18rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .container .main-text {
+    width: 100%;
+  }
+
+  /* Start Mercury */
+
+  .mercury-section .container {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .planet-card {
+    padding-top: 3rem;
+    max-width: 20.9rem;
+    height: 37.75rem;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    max-height: fit-content;
+    max-width: fit-content;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .planet-img {
+    width: 12rem;
+    padding-bottom: 3rem;
+  }
+
+  .about-planet {
+    font-size: 1.2rem;
+    padding-right: 2rem;
+    font-weight: 390;
+  }
+  .mercury-section .titles {
+    width: 75%;
+    text-align: center;
+  }
+
+  /* Start Venus */
+
+  .venus-section .container {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .venus-section .titles {
+    width: 80%;
+    text-align: center;
+  }
+
+  /* Start Earth */
+  .earth-section .container {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .earth-section .titles {
+    width: 65%;
+    text-align: center;
+  }
+
+  /* Start Mars */
+  .mars-section .container {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mars-section .titles {
+    width: 65%;
+    text-align: center;
+  }
+}
