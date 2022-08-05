@@ -577,6 +577,10 @@ body {
     margin-top: 5rem;
   }
 
+  .about-solar .titles {
+    width: 60%;
+  }
+
   .main-text {
     color: #f5f2e7;
     width: 100%;
@@ -595,8 +599,9 @@ body {
 
   .SUN-image {
     margin-left: 0rem;
-    width: 18rem;
+    width: 14rem;
     margin-bottom: 2.5rem;
+    /* border: solid; */
   }
 
   .container .main-text {
