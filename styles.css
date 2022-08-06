@@ -11,7 +11,7 @@
 body {
   margin: 0;
   padding: 0;
-  height: 10000px;
+  height: 17000px;
   animation: fadeInAnimation ease 1.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -409,7 +409,81 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.mars-section .titles {
+  width: 60%;
+  text-align: center;
+}
 /* End About Mars */
+
+/* Start About Jupiter */
+.jupiter-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.jupiter-section .titles {
+  width: 60%;
+  text-align: center;
+}
+/* End About Jupiter */
+
+/* Start About Saturn */
+.saturn-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.saturn-section .titles {
+  width: 60%;
+  text-align: center;
+}
+
+.saturn-section .container .planet-card .planet-img {
+  width: 33rem;
+}
+/* End About Saturn */
+
+/* Start About Uranus */
+
+.uranus-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.uranus-section .titles {
+  width: 60%;
+  text-align: center;
+}
+
+.uranus-section .container .planet-card .planet-img {
+  width: 33rem;
+}
+/* End About Uranus*/
+
+/* Start About neptune */
+.neptune-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.neptune-section .titles {
+  width: 60%;
+  text-align: center;
+}
+/* End About neptune */
 
 /*
 
@@ -677,6 +751,62 @@ body {
 
   .mars-section .titles {
     width: 65%;
+    text-align: center;
+  }
+
+  /* Start Jupiter */
+  .jupiter-section .container {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .jupiter-section .titles {
+    width: 70%;
+    text-align: center;
+  }
+
+  /* Start Saturn */
+  .saturn-section .container {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .saturn-section .titles {
+    width: 70%;
+    text-align: center;
+  }
+
+  .saturn-section .container .planet-card .planet-img {
+    width: 15rem;
+  }
+
+  /* Start Uranus */
+  .uranus-section .container {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .uranus-section .titles {
+    width: 70%;
+    text-align: center;
+  }
+
+  .uranus-section .container .planet-card .planet-img {
+    width: 15rem;
+  }
+
+  /* Start Neptune */
+  .neptune-section .container {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .neptune-section .titles {
+    width: 70%;
     text-align: center;
   }
 }
