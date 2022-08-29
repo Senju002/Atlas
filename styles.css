@@ -912,4 +912,12 @@ body {
   .footer-section{
     flex-direction: column;
   }
+  .sosmed{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .sosmed img{
+    margin-bottom: 1rem;
+  }
 }
